@@ -1,6 +1,16 @@
-body{
-  padding: 25px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f4;
+    color: #333;
 }
-.title {
-	color: #5C6AC4;
+h1 {
+    color: #333;
+}
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
