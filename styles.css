@@ -31,6 +31,18 @@ nav ul li {
 .profile {
     margin-top: 30px;
 }
+.about p, 
+.interests ul, 
+.education ul {
+    text-align: justify;
+    max-width: 800px; /* Optional: Limits width for better readability */
+    margin: auto; /* Centers the text block */
+}
+
+.interests ul, 
+.education ul {
+    list-style-position: inside; /* Ensures bullet points are aligned */
+}
 
 .profile img {
     width: 150px;
