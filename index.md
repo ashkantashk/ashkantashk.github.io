@@ -4,7 +4,7 @@ title: "Ashkan Tashk"
 ---
 
 <section class="profile">
-    <img src="ashta1.png" alt="Ashkan Tashk">
+    <img src="ashta1.png" alt="Ashkan Tashk" width="30" height="30">
     <h2>Ashkan Tashk</h2>
     <p>Postdoctoral Researcher</p>
     <p>Technical University of Denmark</p>
