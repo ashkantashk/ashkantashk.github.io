@@ -1,10 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #043927; /* Dark green background */
+    background: linear-gradient(to bottom, #2c3e50, #b71c1c); /* Light navy to light red */
+    color: white;
+    font-family: Arial, sans-serif;
     color: white;
     text-align: center;
+    overflow-y: auto;
 }
 
 header {
@@ -64,3 +66,4 @@ ul {
     border-radius: 50%;
     border: 3px solid white;
 }
+
