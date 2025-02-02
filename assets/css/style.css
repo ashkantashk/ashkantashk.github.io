@@ -59,3 +59,8 @@ nav ul li {
 ul {
     list-style-type: none;
 }
+.profile img {
+    width: 120px; /* Adjust as needed */
+    border-radius: 50%;
+    border: 3px solid white;
+}
