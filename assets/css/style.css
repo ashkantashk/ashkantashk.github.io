@@ -1,1 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #043927; /* Dark green background */
+    color: white;
+    text-align: center;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #032d23; /* Slightly darker green */
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.profile {
+    margin-top: 30px;
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 10px;
+}
+
+.about, .interests, .education {
+    background: #055b4c;
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
