@@ -1,3 +1,8 @@
 theme: jekyll-theme-cayman #minima  # You can replace 'minima' with another theme like 'jekyll-theme-cayman'
 title: "Ashkan Tashk"
-description: "Ashkan Tashk professional webpage"
+description: "My personal webpage"
+baseurl: ""
+url: "https://ashkantashk.github.io"
+markdown: kramdown
+permalink: pretty
+exclude: ["node_modules", "vendor"]
