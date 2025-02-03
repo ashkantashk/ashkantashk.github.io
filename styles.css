@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #043927; /* Dark green background */
     color: white;
-    text-align: center;
+    text-align: justify;/*center;*/
 }
 
 header {
