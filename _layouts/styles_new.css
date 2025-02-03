@@ -1,1 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #043927; /* Dark green background */
+    color: white;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #032d23; /* Slightly darker green */
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Container for profile and other sections */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 30px;
+}
+
+/* Profile Section - Left Side */
+.profile {
+    width: 30%;
+    text-align: center;
+    background: #055b4c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* Other Sections - Right Side */
+.content {
+    width: 65%;
+}
+
+.about,
+.Int_Work_Experience,
+.interests,
+.education,
+.publications {
+    background: #055b4c;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.about p,
+.Int_Work_Experience ul,
+.interests ul,
+.education ul {
+    text-align: justify;
+    max-width: 800px; /* Limits width for better readability */
+    margin: auto;
+}
+
+.Int_Work_Experience ul,
+.interests ul,
+.education ul {
+    list-style-position: inside;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 10px;
+}
+
+/* Publications Section */
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pub-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pub-item img {
+    border-radius: 5px;
+}
 
