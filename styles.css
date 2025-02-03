@@ -39,7 +39,7 @@ nav ul li {
     max-width: 800px; /* Optional: Limits width for better readability */
     margin: auto; /* Centers the text block */
 }
-
+.Int_Work_Experience ul,
 .interests ul, 
 .education ul {
     list-style-position: inside; /* Ensures bullet points are aligned */
@@ -56,7 +56,7 @@ nav ul li {
     margin: 10px;
 }
 
-.about, .interests, .education {
+.about, .Int_Work_Experience, .interests, .education {
     background: #055b4c;
     padding: 20px;
     margin: 10px auto;
