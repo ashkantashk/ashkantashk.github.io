@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleBtn = document.getElementById('theme-toggle');
 
     // Restore saved theme or default to dark
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     html.setAttribute('data-theme', savedTheme);
 
     if (toggleBtn) {
@@ -87,4 +87,5 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transition = `opacity 0.4s ease ${(i % 4) * 0.06}s, transform 0.4s ease ${(i % 4) * 0.06}s`;
         observer.observe(el);
     });
+	document.getElementById('current-year').textContent = new Date().getFullYear();
 });
