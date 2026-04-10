@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #043927;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #032d23;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.profile {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    background: #055b4c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 10px;
+}
+
+.content {
+    flex: 3;
+    margin-left: 30px;
+}
+
+.about, .Int_Work_Experience, .interests, .education, .publications {
+    background: #055b4c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.publications {
+    scroll-margin-top: 80px; /* Offset for fixed header */
+}
+
+.pub-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pub-item {
+    background: #044b3b;
+    padding: 10px;
+    border-radius: 10px;
+}

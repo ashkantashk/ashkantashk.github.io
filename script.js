@@ -90,13 +90,37 @@ document.addEventListener('DOMContentLoaded', () => {
 	document.getElementById('current-year').textContent = new Date().getFullYear();
 
     // ══════════════════════════════════════
-    // PROFILE PHOTO SHUFFLE ON PAGE LOAD
-    // ══════════════════════════════════════
-    const profileImg = document.querySelector('.profile-photo img');
-    if (profileImg) {
-        const photos = ['ashta1.webp', 'ashta11.webp', 'ashta111.webp'];
-        const picked = photos[Math.floor(Math.random() * photos.length)];
-        // Cache-bust: append a unique timestamp so the browser always fetches fresh
-        profileImg.src = picked + '?v=' + Date.now();
-    }
+	// PROFILE PHOTO SMOOTH CROSSFADE
+	// ══════════════════════════════════════
+	const photoContainer = document.querySelector('.profile-photo');
+	if (photoContainer) {
+		const photos = ['ashta1.webp', 'ashta11.webp', 'ashta111.webp'];
+		const imgEls = photoContainer.querySelectorAll('img');
+		const frontImg = imgEls[0];
+		const backImg = imgEls[1];
+		let currentIndex = 0;
+
+		setInterval(() => {
+			// Prepare next image on the hidden layer
+			const nextIndex = (currentIndex + 1) % photos.length;
+			backImg.src = photos[nextIndex];
+
+			// Crossfade: front fades out, back fades in
+			frontImg.classList.remove('fade-in');
+			frontImg.classList.add('fade-out');
+			backImg.classList.remove('fade-out');
+			backImg.classList.add('fade-in');
+
+			// After transition completes, swap roles
+			setTimeout(() => {
+				frontImg.src = photos[nextIndex];
+				frontImg.classList.remove('fade-out');
+				frontImg.classList.add('fade-in');
+				backImg.classList.remove('fade-in');
+				backImg.classList.add('fade-out');
+				currentIndex = nextIndex;
+			}, 1300); // slightly longer than the 1.2s CSS transition
+
+		}, 15000); // swap every 15 seconds
+	}
 });
