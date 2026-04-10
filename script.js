@@ -88,4 +88,15 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 	document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // ══════════════════════════════════════
+    // PROFILE PHOTO SHUFFLE ON PAGE LOAD
+    // ══════════════════════════════════════
+    const profileImg = document.querySelector('.profile-photo img');
+    if (profileImg) {
+        const photos = ['ashta1.webp', 'ashta11.webp', 'ashta111.webp'];
+        const picked = photos[Math.floor(Math.random() * photos.length)];
+        // Cache-bust: append a unique timestamp so the browser always fetches fresh
+        profileImg.src = picked + '?v=' + Date.now();
+    }
 });
